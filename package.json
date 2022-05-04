@@ -1,0 +1,12 @@
+{
+  "name": "categorize-seed-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Kamalyesh Kannadkar",
+  "license": "MIT",
+  "keywords": [],
+  "description": ""
+}
