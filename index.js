@@ -14,7 +14,7 @@ class CategorizedSeed {
         // console.debug(this.hasMore(seedName) && this.#seed[seedName].locked ? 'locked': 'unlocked')
         return this.hasMore(seedName) && this.#seed[seedName].locked
     }
-    isUnLocked(seedName) {
+    isUnlocked(seedName) {
         console.debug(this.hasMore(seedName) && !this.#seed[seedName].locked ? 'unlocked' : 'locked')
         return this.hasMore(seedName) && !this.#seed[seedName].locked
     }
@@ -41,6 +41,10 @@ class CategorizedSeed {
     getCurrent(seedName) {
         console.debug('current seed found')
         return this.#seed[seedName].data[this.#seed[seedName].current]
+    }
+    getAll(seedName) {
+        console.debug('all seed found')
+        return this.#seed[seedName].data
     }
     getNext(seedName) {
         if (this.isUnLocked(seedName)) {
